@@ -27,16 +27,71 @@ so that processes will run better.
 At the bottom click on 'Review+Create'
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/3.png?raw=true)
+
+Now that the Resource Group is created we need to create the Virtual Machines. At the top seach up Virtual Machines and click create.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/4.png?raw=true)
+
+For the Resource group, select the one that was just made.
+We need to name the virtual machine - in this case it will be called 'windows-vm'.
+Next under 'Image' we are going to select our OS for the VM - Windows 10 Pro, version 22H2 - x64 Gen2
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/5.png?raw=true)
+
+Scrolling down - we also need to select the 'Size' - Standard_D2s_v3 - 2 vcpus, 8 GiB memory
+Next we need a username and password.
+Username: labexampleuser
+Password: Lab123!!user
+
+Once that is entered, click on the 'Networking' tab
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/6.png?raw=true)
+
+In the Networking tab we are going to create our virtual network at the same time as the virtual machine.
+The Virtual Network will be called Lab2-Vnet
+Click on 'Review + Create'
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/7.png?raw=true)
+
+While Microsoft Azure is provisioning the new Virtual Machine, we are going to create an Ubuntu Virtual Machine.
+
+For resource group select RG-Network-Activities
+Virtual machine name: lablinuxvm
+Image: Ubuntu Server 22.04 LTS - x64 Gen2
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/8.png?raw=true)
+
+Size: Standard_D2s-v3 - 2 vcpus, 8 GiB memory
+Under administrator account select 'password'
+username: linuxuseradmin
+password: Lab123!!user
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/9.png?raw=true)
+
+Go to the networking tab, select the virtual network (Lab2-Vnet) that was created earlier.
+Click on Review + Create
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/10.png?raw=true)
+
+Now that both Virtual Machines are created it is now time to use Remote Desktop Protocol to login to the Windows VM.
+
+Go into Windows and search up Remote Desktop Connection
+Once opened it asks for the Computer IP address. This address can be found on the Virtual Machine.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/11.png?raw=true)
+
+Go back to the Virtual Machine page. You can find the public IP address on the right. For the Windows VM it is 20.3.248.179
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/12.png?raw=true)
+
+Once connected it will ask for the username and password for the Windows VM.
+Username: labexampleuser
+Passowrd: Lab123!!user
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/13.png?raw=true)
+
+On this pop-up go ahead and click connect.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/14.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/15.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/16.png?raw=true)
