@@ -67,10 +67,14 @@ For resource group select RG-Network-Activities
 - username: linuxuseradmin
 - password: Lab123!!user
 
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/9.png?raw=true)
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/36.png?raw=true)
 
 Go to the networking tab, select the virtual network (Lab2-Vnet) that was created earlier.
 Click on Review + Create
+
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/9.png?raw=true)
+
+
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/10.png?raw=true)
 
