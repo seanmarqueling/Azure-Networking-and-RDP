@@ -39,9 +39,10 @@ Next under 'Image' we are going to select our OS for the VM - Windows 10 Pro, ve
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/5.png?raw=true)
 
 Scrolling down - we also need to select the 'Size' - Standard_D2s_v3 - 2 vcpus, 8 GiB memory
+
 Next we need a username and password.
-Username: labexampleuser
-Password: Lab123!!user
+- Username: labexampleuser
+- Password: Lab123!!user
 
 Once that is entered, click on the 'Networking' tab
 
@@ -56,15 +57,15 @@ Click on 'Review + Create'
 While Microsoft Azure is provisioning the new Virtual Machine, we are going to create an Ubuntu Virtual Machine.
 
 For resource group select RG-Network-Activities
-Virtual machine name: lablinuxvm
-Image: Ubuntu Server 22.04 LTS - x64 Gen2
+- Virtual machine name: lablinuxvm
+- Image: Ubuntu Server 22.04 LTS - x64 Gen2
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/8.png?raw=true)
 
-Size: Standard_D2s-v3 - 2 vcpus, 8 GiB memory
-Under administrator account select 'password'
-username: linuxuseradmin
-password: Lab123!!user
+- Size: Standard_D2s-v3 - 2 vcpus, 8 GiB memory
+- Under administrator account select 'password'
+- username: linuxuseradmin
+- password: Lab123!!user
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/9.png?raw=true)
 
