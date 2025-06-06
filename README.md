@@ -6,12 +6,26 @@ The resources that will be created for this lab:
 - Azure Virtual Machines (Windows and Linux [Ubuntu])
   - Azure Network Security Groups (Firewall Resource)
 
-Once all Azure resources are created - going to use Remote Desktop Protocol and Wireshark Application to monitor a traffic between the Windows VM and Linux VM
+Once all Azure resources are created - I am going to use Remote Desktop Protocol and Wireshark Application to monitor a traffic between the Windows VM and Linux VM.
 
-#
+## Instructions - Setting up the Azure Network
+
+From the home screen of Microsoft Azure Network, either select 'Resource Groups' or enter it in the search bar on top.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/1.png?raw=true)
+
+In the Resource Groups page, click Create.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/2.png?raw=true)
+
+Subscription field is already selected when creating the resource group.
+The two things that need to be filled out are the 'Resource Group Name' and 'Region'
+In my example I am going to name it 'RG-Network-Activies' and use region '(US) West US 2.
+The region itself doesn't really matter, but make sure to use the same region for everything in this particular lab
+so that processes will run better.
+
+At the bottom click on 'Review+Create'
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/3.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/4.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/5.png?raw=true)
