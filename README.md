@@ -96,11 +96,15 @@ On this pop-up go ahead and click connect.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/13.png?raw=true)
 
+Now we are connected into the windows vm. We can see on the top left corner the Public IP Address: 20.3.248.179.
 
-
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/14.png?raw=true)
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/15.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/16.png?raw=true)
+
+## - Instructions - Download Wireshark and use it to monitor traffic between the Windows VM and Linux VM
+
+Wireshark cand be found on their webpage [Wireshark Download](https://www.wireshark.org/download.html)
+I used Windows x64 Installer for this lab.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/17.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/18.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/19.png?raw=true)
