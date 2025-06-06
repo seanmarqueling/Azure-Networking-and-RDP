@@ -105,8 +105,30 @@ Now we are connected into the windows vm. We can see on the top left corner the 
 Wireshark cand be found on their webpage [Wireshark Download](https://www.wireshark.org/download.html)
 I used Windows x64 Installer for this lab.
 
+
+Once the application is downloaded and opened
+- select Ethernet
+- click on the sharkfin on the top left
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/17.png?raw=true)
+
+The page that has opened up is where we will see all the traffic between the two VMs.
+
+In the search bar I entered 'ICMP' so that I can monitor ICMP traffic 
+- ICMP - Internet Control MEssage Protocol - this is a network layer protocol used to error reporting and diagnostic functions with IP networks. ICMP is used primarily by network devices: routers, gateways, and hosts.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/18.png?raw=true)
+
+The first thing we want to do is check to make sure we have internet connection.
+
+In the Windows tool bar, look up and open the application called Powershell.
+
+In Powershell we are going to use the 'ping' command to send out an ICMP Echo Request packets to a target host.
+-ping google.com
+-after we pinged google two things should happen.
+  - In the Powershell window we should see packets of information coming back that stgart with Reply, this means are packet went to the host and is sending a signal back.
+  - In Wireshark we should now see request and reply packets from the Windows VM to Google and back.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/19.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/20.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/21.png?raw=true)
