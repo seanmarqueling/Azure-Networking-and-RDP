@@ -74,13 +74,12 @@ Click on Review + Create
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/9.png?raw=true)
 
-
-
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/10.png?raw=true)
-
 Now that both Virtual Machines are created it is now time to use Remote Desktop Protocol to login to the Windows VM.
 
 Go into Windows and search up Remote Desktop Connection
+
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/10.png?raw=true)
+
 Once opened it asks for the Computer IP address. This address can be found on the Virtual Machine.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/11.png?raw=true)
