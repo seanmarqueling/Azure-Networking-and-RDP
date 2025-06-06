@@ -85,8 +85,8 @@ Go back to the Virtual Machine page. You can find the public IP address on the r
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/12.png?raw=true)
 
 Once connected it will ask for the username and password for the Windows VM.
-Username: labexampleuser
-Passowrd: Lab123!!user
+- Username: labexampleuser
+- Passowrd: Lab123!!user
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/13.png?raw=true)
 
