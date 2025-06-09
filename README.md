@@ -180,10 +180,11 @@ We are going to block that port from receiving these ping messages.
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/24.png?raw=true)
 
 Input the following to have the firewall not recieve ICMP.
--Destination port ranges: * (this is a wildcard that pertains to all ports)
-Protocol: ICMPv4
-Action: Deny
-Priority: 290 (picking priority 290 so that it comes before all the other security rules that are in place.
+
+- Destination port ranges: * (this is a wildcard that pertains to all ports)
+- Protocol: ICMPv4
+- Action: Deny
+- Priority: 290 (picking priority 290 so that it comes before all the other security rules that are in place.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/25.png?raw=true)
 
@@ -197,16 +198,17 @@ In Wireshark, all we will see are requests but we will not receive a reply.
 
 Next we will look at ssh traffic.
 
--In Wireshark - type in 'ssh' to only see ssh traffic
--in Powershell the command we will use is 'ssh linuxuseradmin@10.0.0.5'
--Passwod: Lab123!!user
+- In Wireshark - type in 'ssh' to only see ssh traffic
+- In Powershell the command we will use is 'ssh linuxuseradmin@10.0.0.5'
+- Passwod: Lab123!!user
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/27.png?raw=true)
 
 In powershell we should some new information pop up. To check that we are now in the linux vm we can use a couple of commands.
--id (this will give the id of the user logged in)
--hostname (this will tell you the name of the host - on this case it is linuxvm)
--uname -a (this will give you the name of the operating system)
+
+- id (this will give the id of the user logged in)
+- hostname (this will tell you the name of the host - on this case it is linuxvm)
+- uname -a (this will give you the name of the operating system)
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/28.png?raw=true)
 
