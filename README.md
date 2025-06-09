@@ -166,16 +166,16 @@ This will constantly send reply and request packets between the windows vm and l
 
 We are going to block that port from receiving these ping messages.
 
--Go to the linux vm.
--Go into 'Networking' -> 'Network Settings'
--Click on the name of the security group 'lablinuxVM-nsg'
+- Go to the linux vm.
+- Go into 'Networking' -> 'Network Settings'
+- Click on the name of the security group 'lablinuxVM-nsg'
 
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/23.png?raw=true)
 
--CLick on 'Settings'.
--Click on 'Inbound Security Rules'
--Click on 'Add'
+- Click on 'Settings'.
+- Click on 'Inbound Security Rules'
+- Click on 'Add'
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/24.png?raw=true)
 
