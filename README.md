@@ -226,9 +226,16 @@ We will now look at DHCP traffic in Wireshark
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
 
-In Wireshark, we can see the DHCP send 'Requests', 'Release', 'Offer', and 'Discover' when we use the release and renew commands.
+
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/32.png?raw=true)
+
+In Wireshark, we can see the DHCP send the following after the /release /renew commands:
+- 'Requests'
+- 'Release'
+- 'Offer'
+- 'Discover'
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/33.png?raw=true)
 
 We will now look up DNS traffic.
