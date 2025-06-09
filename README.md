@@ -213,10 +213,26 @@ In powershell we should some new information pop up. To check that we are now in
 - uname -a (this will give you the name of the operating system)
 - 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/29.png?raw=true)
+
+We will now exit the linux vm by typing in 'exit'. We can check that we are no longer in the linux vm by typing in 'hostname'. We can see that windows-vm pops up instead of the name of the linux vm.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/30.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/32.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/33.png?raw=true)
+
+We will now look up DNS traffic.
+
+-Type in 'DNS' in Wireshark
+-In Powershell type in 'nslookup disney.com' (this command will look up the address for disney.com
+
+In Wireshark we see the traffic is going out to the DNS and coming back with the address for disney.com
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/34.png?raw=true)
+
+We will now look at the traffic for port 3389 (RDP Port)
+-In Wireshark type in 'tcp.port== 3389
+-This will give us only the traffic in port 3389 - we can see the connections going from the windows vm to the linux vm
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/35.png?raw=true)
 
