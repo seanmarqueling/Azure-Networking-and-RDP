@@ -198,21 +198,20 @@ In Wireshark, all we will see are requests but we will not receive a reply.
 
 Next we will look at ssh traffic.
 
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/27.png?raw=true)
+
 - In Wireshark - type in 'ssh' to only see ssh traffic
 - In Powershell the command we will use is 'ssh linuxuseradmin@10.0.0.5'
 - Passwod: Lab123!!user
 
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/27.png?raw=true)
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/28.png?raw=true)
 
 In powershell we should some new information pop up. To check that we are now in the linux vm we can use a couple of commands.
 
 - id (this will give the id of the user logged in)
 - hostname (this will tell you the name of the host - on this case it is linuxvm)
 - uname -a (this will give you the name of the operating system)
-
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/28.png?raw=true)
-
-
+- 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/29.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/30.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
