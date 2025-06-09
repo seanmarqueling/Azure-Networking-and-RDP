@@ -130,6 +130,21 @@ In Powershell we are going to use the 'ping' command to send out an ICMP Echo Re
   - In Wireshark we should now see request and reply packets from the Windows VM to Google and back.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/19.png?raw=true)
+
+The next step is that we want to now ping traffic from the windows vm to the linux vm. What we need to do is find the private address of the linux vm.
+
+- go to virtual machines.
+- click on the name of the linux vm.
+
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/36.5.png?raw=true)
+
+The private IP address for the linux vm is 10.0.0.5
+
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/37.png?raw=true)
+
+Now when we ping 10.0.0.5 we are able to see the traffic in wireshark from the windows vm to the linux vm.
+
+![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/19.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/20.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/21.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/22.png?raw=true)
