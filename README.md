@@ -145,15 +145,72 @@ The private IP address for the linux vm is 10.0.0.5
 Now when we ping 10.0.0.5 we are able to see the traffic in wireshark from the windows vm to the linux vm.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/19.png?raw=true)
+
+In the Wireshark application in the bottom left corner, we can click on the lines in there to expand the information about the machines.
+
+We can see different source addresses and destination addresses.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/20.png?raw=true)
+
+Back in Powershell, if we type in 'ipconfig /all' we can see additional information about the windows vm. In the previous image we saw code for 'Source: Microsoft_f7:ba:d3 (00:0d:3a:f7:ba:d3)
+
+In the Powershell we can see that that infromation pertains to the physical address of the VM.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/21.png?raw=true)
+
+Next we can do an infinite ping to the linux vm by using the following command 'ping 10.0.0.5 -t'
+
+This will constantly send reply and request packets between the windows vm and linux vm that we can see in the wireshark traffic.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/22.png?raw=true)
+
+We are going to block that port from receiving these ping messages.
+
+-Go to the linux vm.
+-Go into 'Networking' -> 'Network Settings'
+-Click on the name of the security group 'lablinuxVM-nsg'
+
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/23.png?raw=true)
+
+-CLick on 'Settings'.
+-Click on 'Inbound Security Rules'
+-Click on 'Add'
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/24.png?raw=true)
+
+Input the following to have the firewall not recieve ICMP.
+-Destination port ranges: * (this is a wildcard that pertains to all ports)
+Protocol: ICMPv4
+Action: Deny
+Priority: 290 (picking priority 290 so that it comes before all the other security rules that are in place.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/25.png?raw=true)
+
+Once all of that is enabled we will try and ping the linux vm again.
+
+In Powershell what we will see is a message of 'Request timed out.'
+
+In Wireshark, all we will see are requests but we will not receive a reply.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/26.png?raw=true)
+
+Next we will look at ssh traffic.
+
+-In Wireshark - type in 'ssh' to only see ssh traffic
+-in Powershell the command we will use is 'ssh linuxuseradmin@10.0.0.5'
+-Passwod: Lab123!!user
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/27.png?raw=true)
+
+In powershell we should some new information pop up. To check that we are now in the linux vm we can use a couple of commands.
+-id (this will give the id of the user logged in)
+-hostname (this will tell you the name of the host - on this case it is linuxvm)
+-uname -a (this will give you the name of the operating system)
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/28.png?raw=true)
+
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/29.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/30.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
