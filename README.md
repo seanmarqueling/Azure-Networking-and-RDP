@@ -224,10 +224,6 @@ We will now look at DHCP traffic in Wireshark
   - ipconfig /release (this command will release the IP address of the windows-vm
   - ipconfig /renew (this command will have the dhcp give a new IP address to the windows-vm
 
-![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
-
-
-
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/32.png?raw=true)
 
 In Wireshark, we can see the DHCP send the following after the /release /renew commands:
