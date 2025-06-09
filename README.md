@@ -211,28 +211,38 @@ In powershell we should some new information pop up. To check that we are now in
 - id (this will give the id of the user logged in)
 - hostname (this will tell you the name of the host - on this case it is linuxvm)
 - uname -a (this will give you the name of the operating system)
-- 
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/29.png?raw=true)
 
 We will now exit the linux vm by typing in 'exit'. We can check that we are no longer in the linux vm by typing in 'hostname'. We can see that windows-vm pops up instead of the name of the linux vm.
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/30.png?raw=true)
+
+We will now look at DHCP traffic in Wireshark
+-Type in dhcp in wireshark
+-In Powershell we will be using two commands:
+  - ipconfig /release (this command will release the IP address of the windows-vm
+  - ipconfig /renew (this command will have the dhcp give a new IP address to the windows-vm
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/31.png?raw=true)
+
+In Wireshark, we can see the DHCP send 'Requests', 'Release', 'Offer', and 'Discover' when we use the release and renew commands.
+
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/32.png?raw=true)
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/33.png?raw=true)
 
 We will now look up DNS traffic.
 
--Type in 'DNS' in Wireshark
--In Powershell type in 'nslookup disney.com' (this command will look up the address for disney.com
+- Type in 'DNS' in Wireshark
+- In Powershell type in 'nslookup disney.com' (this command will look up the address for disney.com
 
 In Wireshark we see the traffic is going out to the DNS and coming back with the address for disney.com
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/34.png?raw=true)
 
 We will now look at the traffic for port 3389 (RDP Port)
--In Wireshark type in 'tcp.port== 3389
--This will give us only the traffic in port 3389 - we can see the connections going from the windows vm to the linux vm
+- In Wireshark type in 'tcp.port== 3389
+- This will give us only the traffic in port 3389 - we can see the connections going from the windows vm to the linux vm
 
 ![image](https://github.com/seanmarqueling/Azure-Networking-and-RDP/blob/main/35.png?raw=true)
 
