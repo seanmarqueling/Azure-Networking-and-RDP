@@ -1,4 +1,4 @@
-# Azure-Networking-and-RDP
+# Azure-Networking-RDP-and-Wireshark
 Networking Lab Overview:
 The resources that will be created for this lab:
 - Resource Groups
